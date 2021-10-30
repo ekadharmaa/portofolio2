@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- dark mode -->
+    <link rel="stylesheet" href="css/darkmode.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Eka Dharma | Windows 11</title>
+  </head>
+  <body>
+    <input type="checkbox" class="custom-control-input bg-danger" id="darkSwitch">
+
+    <audio autoplay>
+      <source src="audio/windows11.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="jumbotron-wallpaper jumbotron-fluid">
+      <div class="position-fixed bottom-100 right-0 p-3" style="z-index: 5; right: 0; bottom: 40px;">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="7000">
+          <div class="toast-header">
+            <img src="img/wa.png" class="rounded mr-2" width="25  " height="25">
+            <strong class="mr-auto">WhatsApp</strong>
+            <small>Just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Hallo,Selamat datang di Website Portofolio<br>
+            Eka Dharma <br>
+            <a id="balas" class="reply">reply</a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="trash">
+          <div class="bar-trs">
+            <div class="exit-trs">
+              <i class="fas fa-times ex-wht"></i>
+            </div>
+          </div>
+          <img src="img/success.gif" alt="">
+        </div>
+
+        <div class="settings">
+          <h2>coming soon</h2>
+          <i class="fas fa-chevron-right" id="set-close"></i>
+        </div>
+
+        <div class="kalkulator">
+          <div class="bar-kal">
+            <div class="exit-kal">
+              <i class="fas fa-times ex-kal"></i>
+            </div>
+            <div class="minim-kal">
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+
+          <div class="engine">
+            <form name="form">
+                <input type="text" name="hasil" class="hasil">
+            </form>
+    
+            <table>
+                <br>
+    
+                <tr>
+                    <td><input type="button" class="button" value="C" onclick="clean()"></td>
+                    <td><input type="button" class="button" value="<" onclick="back()"></td>
+                    <td><input type="button" class="button" value="/" onclick="insert('/')"></td>
+                    <td><input type="button" class="button" value="x" onclick="insert('*')"></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="button" class="button" value="7" onclick="insert(7)"></td>
+                    <td><input type="button" class="button" value="8" onclick="insert(8)"></td>
+                    <td><input type="button" class="button" value="9" onclick="insert(9)"></td>
+                    <td><input type="button" class="button" value="-" onclick="insert('-')"></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="button" class="button" value="4" onclick="insert(4)"></td>
+                    <td><input type="button" class="button" value="5" onclick="insert(5)"></td>
+                    <td><input type="button" class="button" value="6" onclick="insert(6)"></td>
+                    <td><input type="button" class="button" value="+" onclick="insert('+')"></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="button" class="button" value="3" onclick="insert(3)"></td>
+                    <td><input type="button" class="button" value="2" onclick="insert(2)"></td>
+                    <td><input type="button" class="button" value="1" onclick="insert(1)"></td>
+                    <td rowspan="5"><input type="button" class="button blue" value="=" onclick="equal()"></td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2"><input type="button" class="button null" value="0" onclick="insert(0)"></td>
+                    <td><input type="button" class="button" value="." onclick="insert('.')"></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+        <div class="whatsapp">
+          <div class="bar">
+            <div class="exit-wht">
+              <i class="fas fa-times ex-wht"></i>
+            </div>
+            <div class="show-wht">
+              <i class="fas fa-window-maximize"></i>
+            </div>
+            <div class="show-min-wht">
+              <i class="fas fa-window-restore min-wht"></i>
+            </div>
+            <div class="minim-wht">
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <div class="wa">
+            <div class="content">
+                  <div class="detail">
+                    <i class="fas fa-arrow-left"></i>
+                    <img src="img/wakwik.png" alt="">
+                    <h4>Eka Dharma</h4>
+                  </div>
+                  <div class="bar-menu">
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+            </div>
+            <div class="pesan">
+              <p>Hallo,Selamat datang di website portofolio Eka Dharma</p>
+            </div>
+            <div class="pesan">
+              <p>I am eighteen years old. I have a student background at ITB STIKOM BALI.
+              </p>
+            </div>
+
+            <div class="container">
+              <div class="chat">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text emo">
+                      <i class="far fa-grin"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="type message" id="pesan" onkeydown="validation()">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-paperclip"></i>
+                    </span>
+                    <span class="input-group-text cam">
+                      <i class="fas fa-camera"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="vn">
+                  <i class="fas fa-microphone"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-windows">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <div class="skill-me">
+            <h1 class="title">Skill</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="img/skill/732212.png" class="img-skill">
+              </div>
+              <div class="col-sm-4">
+                <img src="img/skill/css-131-722685.png" class="img-skill">
+              </div>
+              <div class="col-sm-4">
+                <img src="img/skill/javascript-2752148-2284965.png" class="img-skill">
+              </div>
+            </div>
+          </div>
+          <hr>
+          </div>
+          <div class="detail-me">
+            <h1 class="title">Tentang Saya</h1>
+            <div class="container">
+              I am eighteen years old. I have a student background at ITB STIKOM BALI. In January 2020 I attended a field work training at Kominfo Badung. I believe that my qualifications and skills can make a significant contribution to the company. I'm a person who can do well as part of a team and on my own. I am also a hard worker, and eager to learn.
+            </div>
+            <hr>
+          </div>
+          <div class="footer">
+                <div class="detail">
+                  <div class="d-flex align-items-end" href="#">
+                    <img src="img/wakwik.png" width="40" height="40" class="rounded-circle">
+                    <h1 class="name">Eka Dharma</h1>
+                  </div>
+                </div>
+                <div class="cls">
+                  <button type="button" class="btn float-right" id="cls">
+                    <i class="fas fa-power-off"></i>
+                  </button>
+                </div>
+          </div>
+        </div>
+
+        <div class="openfile">
+          <div class="bar">
+            <div class="exit">
+              <i class="fas fa-times ex"></i>
+            </div>
+            <div class="show">
+              <i class="fas fa-window-maximize"></i>
+            </div>
+            <div class="show-min">
+              <i class="fas fa-window-restore min"></i>
+            </div>
+            <div class="minim">
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Website</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#sertifikat" role="tab" aria-controls="contact" aria-selected="false">Certificate</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#cv" role="tab" aria-controls="contact" aria-selected="false">Download CV</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row mt-2">
+                  <div class="col-sm-3">
+                    <div id="list-example" class="list-group">
+                      <a class="list-group-item open" href="#list-item-1">
+                        <img src="img/folder.png" class="icon">  Work 1</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-8 d-flex align-items-center">
+                    <div class="container">
+                        <div class="jumbotron content" id="list-item-1">
+                          <h3>Soon Website Koperasi</h3>
+                          <img src="img/my works/work1.jpeg" class="img-fluid">
+                          <p>Ini Adalah Project Saya yang saya kerjakan sekarang untuk sebuah Koperasi dan menggunakan PHP Native dan Bootstrap. saat ini Website yang saya kerjakan masih dalam tahap pengembangan.
+                          </p>
+                          <button class="btn btn-blue"><a href="http://www.projectkoperasi.byethost7.com/login/login.php" target="blank" style="color: white;">Kunjungi</a></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="page">
+                  <div class="web mt-3">
+                    <div class="box">
+                      <img src="img/my works/work1.jpeg" alt="">
+                    </div>
+                    <div class="box">
+                      <img src="img/my works/work2.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="sertifikat" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="page">
+                  <div class="container">
+                    <div class="alert alert-success" role="alert">
+                      <div class="row d-flex align-items-center">
+                        <div class="col-sm-11">
+                          <p>DECODE.ID | WEB DESIGNER</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <div class="icon fas fa-eye"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="page">
+                  <div class="container">
+                    <div class="alert alert-secondary" role="alert">
+                      <div class="row d-flex align-items-center">
+                        <div class="col-sm-11">
+                          <p>Download CV Eka Dharma</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <div class="icon fas fa-download"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- whatsapp -->
+        <button type="button" class="btn" id="wa">
+          <img src="img/wa.png" alt=""><br>
+          WhatsApp
+      </button>
+      <!-- folder  -->
+      <button type="button" class="btn" id="file">
+        <img src="img/file-explorer-folder-libraries-icon-18298.png" alt=""><br>
+        Folder Eka
+      </button>
+    <br>
+      <!-- whatsapp -->
+      <button type="button" class="btn" id="clear">
+        <img src="img/Recycle_Bin_Windows_11_empty.png" alt=""><br>
+        Recycle bin
+      </button>
+        <br>
+        
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-bottom">
+        <ul id="mydiv">
+          <li>
+            <img src="img/windows.png" class="img" id="windows">
+          </li>
+          <li>
+              <label for="darkSwitch">
+                <img src="img/dark-mode.png" class="img">
+              </label>
+          </li>
+          <li>
+              <img src="img/file-explorer-folder-libraries-icon-18298.png" class="img" id="file2">
+          </li>
+          <li><img src="img/groove-music.png" class="img" id="comming"></li>
+          <li><img src="img/kalkulator.png" class="img" id="icon-kalkulator"></li>
+          <li><img src="img/settings.png" class="img" id="set"></li>
+        </ul>
+        <div class="time">
+          <div class="btn-group dropup">
+            <button class="btn up-drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://github.com/ekadharmaa/" target="blank"><i class="fab fa-github"></i> GitHub</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/eka.dharma.35175/" target="blank"><i class="fab fa-facebook"></i> Facebook</a>
+                      <a class="dropdown-item" href="https://www.instagram.com/ekadharmaaa/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+                      <a class="dropdown-item" href="https://www.instagram.com/ekadharmaaa/" target="blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+          <i id="fullscreen" class="fas fa-expand"></i>
+          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+          <h5 id="tanggalwaktu"></h5>
+          <script>
+          </script>
+        </div>
+      </nav>
+
+
+      <script>
+        var screen = document.getElementById('fullscreen');
+        var el = document.documentElement;
+        screen.onclick = function(){
+            el.requestFullscreen();
+        }
+      </script>
+
+    <script src="js/dark-mode-switch.js"></script>
+    <script src="js/open-trash.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/file.js"></script>
+    <script src="js/open-whatsapp.js"></script>
+    <script src="js/open-windows.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <script>
+      var comming = document.getElementById('comming');
+
+      comming.onclick = function(){
+        alert('CommingSoon Pak!');
+      }
+      
+      $(document).on('click','.list-group-item',function(){
+        $(this).addClass('open').siblings().removeClass('open')
+      })
+
+      $(document).on('click','ul li',function(){
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+
+      $('.toast').toast('show');
+
+      var dt = new Date();
+          document.getElementById("tanggalwaktu").innerHTML = ((dt.getHours())) +":"+ ((dt.getMinutes()));
+          // document.getElementById("tanggalwaktu").innerHTML = (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+  var memo;
+  var a = 5;
+  $('.whatsapp,.kalkulator,.openfile,.trash').draggable({
+      cursor: "grabbing",
+      snap:true,
+      snapTolerance:30,
+      // zIndex: a++,
+    start: function() {
+      memo = $(this).css('transition');
+      $(this).css("z-index", a++);
+      $(this).css('transition', 'none');
+    },
+    stop: function() {
+      $(this).css('transition', memo);
+    }
+  });
+
+  $('#mydiv').sortable({
+    // distance:50,
+    container:"parent",
+    cursor:"grabbing",
+    axis : "x",
+    start: function() {
+      memo = $(this).css('transition');
+      $(this).css('transition', 'none');
+    },
+    stop: function() {
+      $(this).css('transition', memo);
+    }
+  });
+</script>
+  </body>
+</html>

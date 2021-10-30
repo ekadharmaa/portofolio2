@@ -1,0 +1,237 @@
+.openfile {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    margin-top: -300px;
+    margin-left: -300px;
+    width: 50%;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.openfile .bar {
+    width: 100%;
+    height: 40px;
+}
+
+.openfile.active {
+    visibility: visible;
+}
+
+.openfile i {
+    font-size: 15px;
+    color: #677F92;
+}
+
+.openfile .exit i {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 0 15px 0 0;
+}
+
+.openfile .exit:hover i {
+    background-color: #D8383B;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.openfile .show i {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+
+.openfile .show-min i {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+}
+
+.openfile .show:hover i,
+.openfile .show-min:hover i {
+    background-color: #dfdfdf;
+    transition: all 0.5s;
+}
+
+.openfile .minim i {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 75px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.openfile .minim:hover i {
+    background-color: #dfdfdf;
+    transition: all 0.5s;
+}
+
+.openfile .jumbotron {
+    border: none;
+    border-radius: 30px;
+    opacity: 0;
+    display: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+
+
+.openfile .img-fluid {
+    border-radius: 15px;
+}
+
+.openfile .jumbotron:target {
+    opacity: 1;
+    display: block;
+}
+
+.openfile .list-group .list-group-item {
+    background-color: #ffffff;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    color: #677F92;
+    transition: 0.5s;
+    margin: 3px;
+}
+
+.openfile .list-group .list-group-item:hover {
+    background-color: #dbdbdb;
+    border-radius: 25px;
+    color: #677F92;
+}
+
+.openfile .list-group-item.open {
+    background-color: #eeeeee;
+    border-radius: 25px;
+}
+
+.openfile ::-webkit-scrollbar {
+    margin-left: 10px;
+    width: 5px;
+    background-color: transparent;
+}
+
+.openfile ::-webkit-scrollbar-thumb {
+    background-color: #677F92;
+    border-radius: 50px;
+}
+
+.btn-blue {
+    background-color: #677F92;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-blue:hover {
+    transform: scale(1.1);
+}
+
+.openfile .icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.openfile a {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.openfile .web {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.page {
+    overflow-y: scroll;
+    height: 400px;
+    padding: 20px;
+}
+
+.openfile .dsg {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.openfile .container .box {
+    width: 40%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: inset rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.openfile .container .box img {
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* alert */
+.openfile .alert h5 {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.openfile .alert p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.openfile .icon {
+    cursor: pointer;
+}
+
+.openfile .nav-link {
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    margin-left: 10px;
+    color: #677F92;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.openfile .nav-link.active {
+    background-color: #677F92;
+    color: #dbdbdb;
+    border-radius: 15px;
+    margin-left: 10px;
+}

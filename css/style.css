@@ -1,0 +1,168 @@
+@import url(responsive.css);
+
+@import url(open_file.css);
+
+@import url(menuwindows.css);
+
+@import url(whatsapp.css);
+
+@import url(settings.css);
+
+@import url(kalkulator.css);
+
+@import url(trash.css);
+
+@import url(audio.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.jumbotron-wallpaper {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url(../img/Windows11.jpg);
+    transition: all 1s ease-in-out;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4DFF3;
+    height: 40px;
+    opacity: 95%;
+}
+
+.navbar-brand img {
+    width: 20px;
+}
+
+.content .btn img {
+    width: 45px;
+}
+
+.content .btn {
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.navbar ul {
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* line-height: 40px; */
+    margin-top: 15px;
+}
+
+.navbar ul li {
+    width: 40px;
+    height: 40px;
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover {
+    background-color: rgb(236, 250, 255);
+}
+
+.navbar ul li .img {
+    width: 30px;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.navbar ul li label {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li.active {
+    background-color: rgb(236, 250, 255);
+}
+
+.time {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time h5 {
+    font-size: 15px;
+    padding: 0;
+    margin: 10px;
+    color: #303030;
+}
+
+.time i {
+    font-size: 12px;
+    padding: 0;
+    margin: 5px;
+    color: #303030;
+    cursor: pointer;
+}
+
+.up-drop {
+    font-size: 12px;
+    padding: 0;
+    margin: 5px;
+}
+
+.up-drop i {
+    color: #303030;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 80px;
+    }
+
+    .navbar ul li {
+        height: 80px;
+    }
+
+    .openfile .col-sm-3 {
+        width: 30%;
+    }
+
+    .openfile .col-sm-8 {
+        width: 70%;
+    }
+
+    .menu-windows {
+        width: 100%;
+        height: 110%;
+    }
+
+    .menu-windows .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .time {
+        display: none;
+    }
+}
